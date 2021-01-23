@@ -1,6 +1,7 @@
 import { saludar } from './js/componentes';
 import './styles.css';
 
-const nombre = 'Julio César Franco';
+const nombre = document.querySelector('#txtNombre');
 
-saludar(nombre);
+const boton = document.querySelector('#btnSaludar');
+boton.addEventListener('click', () => saludar(nombre.value));
